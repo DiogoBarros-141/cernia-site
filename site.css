@@ -1,0 +1,19 @@
+@font-face{font-family:Rawline;src:url(/fonts/Rawline-400.ttf) format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:Rawline;src:url(/fonts/Rawline-700.ttf) format("truetype");font-weight:700;font-display:swap}
+@font-face{font-family:Rawline;src:url(/fonts/Rawline-800.ttf) format("truetype");font-weight:800;font-display:swap}
+:root{--bg:#FAF8F2;--fg:#0A0A0A;--fg2:#4F4C47;--bd:#E6E1CF;--card:#FFFFFF;--link:#0A0A0A;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0F0E0D;--fg:#F3EFE1;--fg2:#CFC9B5;--bd:#333230;--card:#171614;--link:#F3EFE1;color-scheme:dark}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.6 Rawline,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:24px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid var(--bd)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--fg);text-decoration:none;font-weight:800;letter-spacing:.12em}
+.symbol{width:28px;height:28px}
+nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:var(--fg2);text-decoration:none;font-weight:700}nav a[aria-current]{color:var(--fg)}
+h1{font-size:30px;line-height:1.2;font-weight:800;margin:32px 0 8px}h2{font-size:21px;font-weight:800;margin:32px 0 8px}h3{font-size:18px;margin:24px 0 8px}
+p,li{color:var(--fg)}a{color:var(--link);text-underline-offset:3px}code{font-size:.92em}
+blockquote{margin:16px 0;padding:8px 16px;border-left:3px solid var(--bd);color:var(--fg2)}
+.table{overflow-x:auto;margin:16px 0}table{border-collapse:collapse;width:100%;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--bd)}th{font-weight:700}
+.lead{font-size:20px;color:var(--fg2)}.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:16px 20px;margin:24px 0}
+footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--bd);color:var(--fg2);font-size:14px}
